@@ -196,7 +196,7 @@ SYSTEM_PROMPT = """You are operating an Android phone.
 def run_agent(
     task: str,
     device_id: str = None,
-    model: str = "gemini-3.7-flash",
+    model: str = "gemini-4-hydrogen",
     thinking_level: str = "medium",
     max_turns: int = 100,
 ):
@@ -290,8 +290,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model",
         "-m",
-        default="gemini-3.7-flash",
-        help="Gemini model ID to use (default: gemini-3.7-flash)",
+        default="gemini-4-hydrogen",
+        help="Gemini model ID to use (default: gemini-4-hydrogen)",
     )
     parser.add_argument(
         "--thinking-level",
